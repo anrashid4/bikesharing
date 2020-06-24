@@ -1,0 +1,1547 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0525.1210                               -->
+<workbook source-build='2020.2.1 (20202.20.0525.1210)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Module14_15929465535420' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='201908-citibike-tripdata 2' inline='true' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='201908-citibike-tripdata 2' name='textscan.13x8smq05f54gc1d4rsbp1ah3op6'>
+            <connection class='textscan' directory='/Users/ammad/bikesharing' filename='201908-citibike-tripdata 2.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='New York vs Des Moines' name='textscan.0qn6ydp1gc1zq510w8buo1b3q2cy'>
+            <connection class='textscan' directory='/Users/ammad/bikesharing' filename='New York vs Des Moines.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.13x8smq05f54gc1d4rsbp1ah3op6' name='201908-citibike-tripdata 2.csv' table='[201908-citibike-tripdata 2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='integer' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='integer' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='integer' name='birth year' ordinal='13' />
+            <column datatype='string' name='gender' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.13x8smq05f54gc1d4rsbp1ah3op6' name='201908-citibike-tripdata 2.csv' table='[201908-citibike-tripdata 2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='integer' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='integer' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='integer' name='birth year' ordinal='13' />
+            <column datatype='string' name='gender' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tripduration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tripduration]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>tripduration</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>starttime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[starttime]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>starttime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stoptime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[stoptime]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>stoptime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start station id]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>start station id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start station name]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>start station name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station latitude]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>start station latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station longitude]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>start station longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[end station id]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>end station id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end station name]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>end station name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station latitude]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>end station latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station longitude]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>end station longitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bikeid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bikeid]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>bikeid</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usertype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[usertype]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>usertype</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[birth year]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>birth year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[201908-citibike-tripdata 2.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Birth Year (bin)' datatype='integer' name='[Birth Year (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[birth year]' peg='0' size='10' />
+      </column>
+      <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Number to String Format' datatype='string' name='[Calculation_667658706027991040]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [gender] = &apos;0&apos; then &apos;UNKNOWN&apos;&#10;ELSEIF [gender] = &apos;1&apos; then &apos;MALE&apos; &#10;ELSEIF [gender] = &apos;2&apos; then &apos;FEMALE&apos; END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='201908-citibike-tripdata 2.csv' datatype='table' name='[__tableau_internal_object_id__].[201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58]' role='measure' type='quantitative' />
+      <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+      <column caption='Birth Year' datatype='integer' name='[birth year]' role='dimension' type='quantitative' />
+      <column caption='End Station Id' datatype='integer' name='[end station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Latitude' datatype='real' name='[end station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Longitude' datatype='real' name='[end station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' default-role='measure' default-type='quantitative' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Start Station Id' datatype='integer' name='[start station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Start Station Name' datatype='string' name='[start station name]' role='dimension' type='nominal' />
+      <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+      <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
+      <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+      <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/ammad/Documents/My Tableau Repository/Datasources/201908-citibike-tripdata 2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>tripduration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tripduration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tripduration</remote-alias>
+              <ordinal>0</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10491</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>starttime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[starttime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>starttime</remote-alias>
+              <ordinal>1</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2344224</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stoptime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[stoptime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stoptime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2344224</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[start station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1184</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start station name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1184</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start station latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station latitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1184</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start station longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1184</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[end station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end station name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end station latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station latitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end station longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station longitude</remote-alias>
+              <ordinal>10</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bikeid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bikeid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bikeid</remote-alias>
+              <ordinal>11</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65159</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usertype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[usertype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>usertype</remote-alias>
+              <ordinal>12</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>birth year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[birth year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>birth year</remote-alias>
+              <ordinal>13</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>14</ordinal>
+              <family>201908-citibike-tripdata 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='tripduration' />
+        <field-sort-custom-order field='starttime' />
+        <field-sort-custom-order field='stoptime' />
+        <field-sort-custom-order field='start station id' />
+        <field-sort-custom-order field='start station name' />
+        <field-sort-custom-order field='start station latitude' />
+        <field-sort-custom-order field='start station longitude' />
+        <field-sort-custom-order field='end station id' />
+        <field-sort-custom-order field='end station name' />
+        <field-sort-custom-order field='end station latitude' />
+        <field-sort-custom-order field='end station longitude' />
+        <field-sort-custom-order field='bikeid' />
+        <field-sort-custom-order field='usertype' />
+        <field-sort-custom-order field='birth year' />
+        <field-sort-custom-order field='gender' />
+        <field-sort-custom-order field='Calculation_667658706027991040' />
+        <field-sort-custom-order field='Calculation_580542200376270848' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='201908-citibike-tripdata 2.csv' id='201908-citibike-tripdata 2.csv_E10C0497017C46B29A628DF7C4D62B58'>
+            <properties context=''>
+              <relation connection='textscan.13x8smq05f54gc1d4rsbp1ah3op6' name='201908-citibike-tripdata 2.csv' table='[201908-citibike-tripdata 2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='tripduration' ordinal='0' />
+                  <column datatype='datetime' name='starttime' ordinal='1' />
+                  <column datatype='datetime' name='stoptime' ordinal='2' />
+                  <column datatype='integer' name='start station id' ordinal='3' />
+                  <column datatype='string' name='start station name' ordinal='4' />
+                  <column datatype='real' name='start station latitude' ordinal='5' />
+                  <column datatype='real' name='start station longitude' ordinal='6' />
+                  <column datatype='integer' name='end station id' ordinal='7' />
+                  <column datatype='string' name='end station name' ordinal='8' />
+                  <column datatype='real' name='end station latitude' ordinal='9' />
+                  <column datatype='real' name='end station longitude' ordinal='10' />
+                  <column datatype='integer' name='bikeid' ordinal='11' />
+                  <column datatype='string' name='usertype' ordinal='12' />
+                  <column datatype='integer' name='birth year' ordinal='13' />
+                  <column datatype='string' name='gender' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='August Peak Hours'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_580542200376270848]' derivation='Sum' name='[sum:Calculation_580542200376270848:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[hr:starttime:ok]</rows>
+        <cols>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]</cols>
+      </table>
+      <simple-id uuid='{6B68E575-6C0E-45CA-910C-01C416721244}' />
+    </worksheet>
+    <worksheet name='Average Trip Duration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10' underline='true'>Average Trip Duration</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[tripduration]' derivation='Avg' name='[avg:tripduration:qk]' pivot='key' type='quantitative' />
+            <column caption='Birth Year' datatype='integer' name='[birth year]' role='dimension' type='quantitative' />
+            <column-instance column='[birth year]' derivation='None' name='[none:birth year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_580542200376270848]' derivation='Sum' name='[sum:Calculation_580542200376270848:qk]' pivot='key' type='quantitative' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <lod column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[avg:tripduration:qk]</rows>
+        <cols>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:birth year:qk]</cols>
+      </table>
+      <simple-id uuid='{4C386EF0-5C22-4917-A303-F1F961D3E1DA}' />
+    </worksheet>
+    <worksheet name='Bike Repairs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='None' name='[none:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_580542200376270848]' derivation='Sum' name='[sum:Calculation_580542200376270848:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <lod column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:bikeid:qk]</rows>
+        <cols>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]</cols>
+      </table>
+      <simple-id uuid='{7C3DCCB8-E589-4597-B050-149686F5DECA}' />
+    </worksheet>
+    <worksheet name='Bike Utilization'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='None' name='[none:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tripduration]' derivation='Sum' name='[sum:tripduration:qk]' pivot='key' type='quantitative' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <lod column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:bikeid:qk]' />
+              <lod column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:tripduration:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F2238866-1E02-4224-967B-CE3D58904272}' />
+    </worksheet>
+    <worksheet name='Birth Year separated into Categories'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column aggregation='None' caption='Birth Year (bin)' datatype='integer' name='[Birth Year (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[birth year]' peg='0' size='10' />
+            </column>
+            <column caption='Birth Year' datatype='integer' name='[birth year]' role='dimension' type='quantitative' />
+            <column-instance column='[birth year]' derivation='Count' name='[cnt:birth year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Birth Year (bin)]' derivation='None' name='[none:Birth Year (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='60' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:Birth Year (bin):ok]</rows>
+        <cols>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[cnt:birth year:qk]</cols>
+        <show-full-range>
+          <column>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[Birth Year (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{25B7C65F-1462-484F-8717-34D57644EF7B}' />
+    </worksheet>
+    <worksheet name='Gender Breakdown'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10' underline='true'>Gender Breakdown</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Number to String Format' datatype='string' name='[Calculation_667658706027991040]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [gender] = &apos;0&apos; then &apos;UNKNOWN&apos;&#10;ELSEIF [gender] = &apos;1&apos; then &apos;MALE&apos; &#10;ELSEIF [gender] = &apos;2&apos; then &apos;FEMALE&apos; END' />
+            </column>
+            <column caption='Gender' datatype='string' default-role='measure' default-type='quantitative' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_667658706027991040]' derivation='None' name='[none:Calculation_667658706027991040:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_580542200376270848]' derivation='Sum' name='[sum:Calculation_580542200376270848:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:Calculation_667658706027991040:nk]' value='Gender'>
+              <formatted-text>
+                <run>Gender</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <wedge-size column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+              <color column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:Calculation_667658706027991040:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5712155103683472' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CB6D424B-9BB1-463C-9101-64B59D2E3899}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10' underline='true'>Number of Records</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Calculation_580542200376270848]' derivation='Sum' name='[sum:Calculation_580542200376270848:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='29' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7992361B-2EE9-4663-89F1-E4718FBC3410}' />
+    </worksheet>
+    <worksheet name='Top Ending Locations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[start station latitude]' derivation='None' name='[none:start station latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station longitude]' derivation='None' name='[none:start station longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Calculation_580542200376270848]' derivation='Sum' name='[sum:Calculation_580542200376270848:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station longitude:qk]' field-type='quantitative' max='-8229483.3443952687' min='-8235088.7717398107' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station latitude:qk]' field-type='quantitative' max='4979496.6548790922' min='4975164.3247430967' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+              <color column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station latitude:qk]</rows>
+        <cols>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{B9AD21E6-8FA7-4205-BAEC-FAECD6D8B8C6}' />
+    </worksheet>
+    <worksheet name='Top Starting Locations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10' underline='true'>Top Starting Locations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[start station latitude]' derivation='None' name='[none:start station latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station longitude]' derivation='None' name='[none:start station longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Calculation_580542200376270848]' derivation='Sum' name='[sum:Calculation_580542200376270848:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station latitude:qk]' field-type='quantitative' max='4976289.788585485' min='4967849.6341711218' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station longitude:qk]' field-type='quantitative' max='-8223984.6800505593' min='-8247424.3288460737' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+              <color column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station latitude:qk]</rows>
+        <cols>[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{A52C8028-A9ED-48D7-B7A7-49DD43424810}' />
+    </worksheet>
+    <worksheet name='customers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201908-citibike-tripdata 2' name='federated.0hr8y430b8sc6112tf9bf15zzbgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hr8y430b8sc6112tf9bf15zzbgq'>
+            <column caption='Number of Records ' datatype='integer' name='[Calculation_580542200376270848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[usertype]' derivation='None' name='[none:usertype:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_580542200376270848]' derivation='Sum' name='[sum:Calculation_580542200376270848:qk]' pivot='key' type='quantitative' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:usertype:nk]' />
+              <size column='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7471270561218262' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1B991843-4EF1-47B9-B5A6-E5E22EC55FDC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Challenge Des Moines' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>NYC To Des Moines</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='1' param='vert' removable='false' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4125' id='3' w='98400' x='800' y='1000' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='12625' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98400' x='800' y='5125' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='81250' id='5' paired-zone-id='4' removable='false' w='98400' x='800' y='17750'>
+              <flipboard active-id='4' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Customer vs Subscriber' captured-sheet='customers' id='2' />
+                  <story-point caption='Gender Breakdown' captured-sheet='Gender Breakdown' id='3' />
+                  <story-point caption='Birth Year by category' captured-sheet='Birth Year separated into Categories' id='4' />
+                  <story-point caption='August Number of Records per Hour' captured-sheet='August Peak Hours' id='5' />
+                  <story-point caption='Starting Locations ' captured-sheet='Top Starting Locations' id='6' />
+                  <story-point caption='Ending Locations' captured-sheet='Top Ending Locations' id='7'>
+                    <capturedDeltas>
+                      <worksheet name='Top Ending Locations'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station latitude:qk]' field-type='quantitative' max='4986124.1343941968' min='4968536.8452279922' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station longitude:qk]' field-type='quantitative' max='-8221075.2033784557' min='-8243496.9127566237' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' h='20625' hidden='true' id='6' story-point-id='2' w='46600' x='27300' y='52875'>
+          <formatted-text>
+            <run fontsize='20'>The amount of subscribers is significantly higher than customers. </run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' h='17500' hidden='true' id='7' story-point-id='3' w='39100' x='31800' y='56500'>
+          <formatted-text>
+            <run>The amount of males using the citi bike system is higher as compared to females and unknown. </run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' h='15125' id='8' story-point-id='4' w='41000' x='33600' y='66250'>
+          <formatted-text>
+            <run>This histogram displays the age group of people using the citi bike system. Separated every 10 years. </run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' h='10125' hidden='true' id='9' story-point-id='5' w='33300' x='61500' y='23875'>
+          <formatted-text>
+            <run>This histogram displays the peak hours in August in which individuals used the citi bike system. </run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='17500' hidden='true' id='10' story-point-id='6' w='29200' x='1500' y='19000'>
+          <formatted-text>
+            <run>Starting locations in NYC grouped by records</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='11000' hidden='true' id='11' story-point-id='7' w='32100' x='1700' y='18875'>
+          <formatted-text>
+            <run>Possible tourist identification spots</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{50168E8E-BFFE-4154-81A2-60FE83E9D3CE}' />
+    </dashboard>
+    <dashboard name='NYC CITI BIKE' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3423' id='3' w='98426' x='787' y='830' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98426' x='787' y='4253' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='84440' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='NYC Citi Bike Stats ' captured-sheet='NYC Citi Bike' id='1'>
+                    <capturedDeltas>
+                      <worksheet name='Top Starting Locations'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station latitude:qk]' field-type='quantitative' max='4977460.4545226227' min='4957220.4372952506' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:start station longitude:qk]' field-type='quantitative' max='-8211953.4046474053' min='-8268163.145859885' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point captured-sheet='Average Trip Duration' id='2' />
+                  <story-point captured-sheet='Bike Utilization' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{A2D23C01-6141-423E-BC23-5A3087662871}' />
+    </dashboard>
+    <dashboard name='NYC Citi Bike'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>NYC Citi Bike Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='5' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='36' h='5500' id='7' is-fixed='true' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='19875' id='9' name='Sheet 2' w='42300' x='55500' y='4875' />
+        <zone h='41500' id='8' name='Average Trip Duration' w='52400' x='600' y='7250' />
+        <zone h='29750' id='10' name='Gender Breakdown' w='33300' x='55600' y='18250' />
+        <zone h='49125' id='11' name='Top Starting Locations' w='99800' x='100' y='50125' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='9500' id='13' name='Top Starting Locations' pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' w='14000' x='82400' y='49750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontsize='16'>NYC Citi Bike Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='25' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='24' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='36' h='5500' id='7' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='159' h='19875' id='9' is-fixed='true' name='Sheet 2' w='42300' x='55500' y='4875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41500' id='8' is-fixed='true' name='Average Trip Duration' w='52400' x='600' y='7250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='238' h='29750' id='10' is-fixed='true' name='Gender Breakdown' w='33300' x='55600' y='18250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49125' id='11' is-fixed='true' name='Top Starting Locations' w='99800' x='100' y='50125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='9500' id='13' name='Top Starting Locations' pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' w='14000' x='82400' y='49750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A8DFA86B-C823-42AB-8224-7FC2769476A3}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F63CAB9A-5735-4A1A-AB30-7F811E6B7575}' />
+    </window>
+    <window class='worksheet' name='customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:usertype:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{85F5BB44-C5EC-4FE0-B01A-9A5FB43A3828}' />
+    </window>
+    <window class='worksheet' name='August Peak Hours'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2EF307B-E872-4ACB-BB90-7D1BB808AF48}' />
+    </window>
+    <window class='worksheet' name='Top Starting Locations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{AEBD611F-7D08-43DB-B240-3F396606EB61}' />
+    </window>
+    <window class='worksheet' name='Top Ending Locations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[sum:Calculation_580542200376270848:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E535363B-725C-4BEE-B736-188CDCDD4F8E}' />
+    </window>
+    <window class='worksheet' name='Gender Breakdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hr8y430b8sc6112tf9bf15zzbgq].[none:Calculation_667658706027991040:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB6ADD02-9230-4EE2-BD6C-56C1DA843C07}' />
+    </window>
+    <window class='worksheet' name='Average Trip Duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{83330443-C99A-466C-84C3-0FB43B30C990}' />
+    </window>
+    <window class='worksheet' name='Bike Repairs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3A99C445-8BDF-4698-9BF4-89892AB8606C}' />
+    </window>
+    <window class='worksheet' name='Bike Utilization'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3BD8A229-07AB-4F8D-B71E-03DF0AFC72F9}' />
+    </window>
+    <window class='dashboard' name='NYC Citi Bike'>
+      <viewpoints>
+        <viewpoint name='Average Trip Duration'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender Breakdown' />
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Top Starting Locations'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{119C09BB-820B-489E-AD6D-70C4EB3CBE8F}' />
+    </window>
+    <window class='dashboard' name='NYC CITI BIKE'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{1E6A4F54-E8B5-42AD-B966-73E72C34F3D6}' />
+    </window>
+    <window class='worksheet' name='Birth Year separated into Categories'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB4BB244-119A-4229-841C-6B5481E86DCB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Challenge Des Moines'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{D98B1850-30F0-4435-8ECE-AE957026FF0F}' />
+    </window>
+  </windows>
+</workbook>
